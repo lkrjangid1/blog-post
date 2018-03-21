@@ -1,0 +1,23 @@
+body {
+  background-color: #EAB2DB;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.article {
+  background-color: #9F8DB2;
+
+  box-shadow: 10px 10px #C4AEC0;
+  margin: 1em 2em;
+}
+.text {
+  padding: 0.2em 2em;
+}
+.text h1 {
+  color: #425447;
+}
+.text h4 {
+  margin-top: -18px;
+}
+.date {
+  text-align: right;
+}
