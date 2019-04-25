@@ -10,6 +10,9 @@ function init() {
 
 // Function to loop through data
 function showInfo(data, tabletop) {
+  // Call hideLoading
+  hideLoading();
+
   for (var i = 0; i < data.length; i++) {
     $('.post').append(
       "<div class='article'>" +
@@ -22,6 +25,11 @@ function showInfo(data, tabletop) {
       "</div>"
     );
   }
+}
+
+// Function to hide loading text
+function hideLoading() {
+  $('.loading').css("display", "none");
 }
 
 window.addEventListener('DOMContentLoaded', init);

@@ -1,26 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- Essential -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Optional meta tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="apple-mobile-web-app-title" content="Blog Post">
+
+    <!-- Open Graph Protocol meta tags -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Blog Post" />
+    <meta property="og:description" content="Website that uses Google Sheets as a backend for blog post." />
+    <meta property="og:image" content="" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    
     <!-- Title -->
     <title>Blog Post</title>
+
+    <!-- Description -->
+    <meta name="description" content="Website that uses Google Sheets as a backend for blog post.">
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/logo.png">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.png">
+
+    <!--[if IE]><link rel="shortcut icon" href="./images/favicon.png"><![endif]-->
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" sizes="56x56" href="./images/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.png">
   </head>
   <body>
 
-    <!-- Blog Post -->
-    <div class="post"></div>
+    <main>
+      <!-- Title -->
+      <div>
+        <h1>Blog Posts</h1>
+      </div>
 
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- Tabletop -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+      <!-- Blog Post -->
+      <div class="post">
+        <!-- Loading -->
+        <div class="loading">
+          <h2>Loading...</h2>
+        </div>
+        <!-- Post Go Here with JS -->
+      </div>
+    </main>
+
     <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script> <!-- Tabletop -->
     <script src="./js/main.js"></script>
   </body>
 </html>
